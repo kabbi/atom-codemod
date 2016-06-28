@@ -1,3 +1,5 @@
 ## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+* Forked `rosswarren` atom-codemods project
+* Removed bundled codemods
+* Implemented an ability to run custom codemods
+* Code refactoring

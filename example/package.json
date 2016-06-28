@@ -1,0 +1,26 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "Example project to demonstrate atom codemods plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "codemod",
+    "example",
+    "test"
+  ],
+  "author": "kabbi",
+  "license": "MIT",
+  "devDependencies": {
+    "js-codemod": "^7.0.0",
+    "react-codemod": "^2.0.0"
+  },
+  "atomCodemods": {
+    "packages": [
+      "js-codemod",
+      "react-codemod"
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-# codemod package
+# Codemods
 
 An atom plugin to run codemods on your files.
 

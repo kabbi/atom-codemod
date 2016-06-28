@@ -1,26 +1,18 @@
 {
   "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "codemod list",
-        "command": "codemod:list"
-      }
-    ]
+    "atom-text-editor": [{
+      "label": "Run codemod on this file",
+      "command": "codemods:apply:file"
+    }]
   },
-  "menu": [
-    {
-      "label": "Packages",
-      "submenu": [
-        {
-          "label": "codemod",
-          "submenu": [
-            {
-              "label": "list",
-              "command": "codemod:list"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  "menu": [{
+    "label": "Packages",
+    "submenu": [{
+      "label": "Codemods",
+      "submenu": [{
+        "label": "Apply to current file",
+        "command": "codemods:apply:file"
+      }]
+    }]
+  }]
 }

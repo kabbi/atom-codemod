@@ -1,17 +1,18 @@
-
 {
-    "extends": "airbnb-base",
-    "rules": {
-        "indent": [2, 4, { "SwitchCase": 1, "VariableDeclarator": 1 }],
-        "comma-dangle": [2, "never"],
-        "space-before-function-paren": [2, "never"],
-        "prefer-rest-params": 0
-    },
-    "env": {
-        "atomtest": true,
-        "jasmine": true
-    },
-    "globals": {
-      "atom": true
-    }
+  "parser": "babel-eslint",
+  "extends": "airbnb-base",
+  "env": {
+    "atomtest": true,
+    "jasmine": true
+  },
+  "globals": {
+    "atom": true
+  },
+  "rules": {
+    // Thats ok to use lazy requires in atom
+    "global-require": "off",
+    // I like spaces when destructuring and no spaces otherwise
+    "array-bracket-spacing": "off",
+    "no-param-reassign": "off"
+  }
 }

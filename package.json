@@ -1,15 +1,19 @@
 {
-  "name": "codemod",
-  "main": "./lib/codemod",
-  "version": "0.1.0",
+  "name": "codemods",
+  "main": "./lib/main",
+  "version": "0.0.1",
   "description": "Atom plugin for running codemods",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "codemod:list"
+  "consumedServices": {
+    "nuclide-output": {
+      "versions": {
+        "0.0.0": "consumeOutputService"
+      }
+    }
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rosswarren/atom-codemod.git"
+    "url": "https://github.com/kabbi/codemods.git"
   },
   "license": "MIT",
   "engines": {
@@ -17,17 +21,24 @@
   },
   "scripts": {
     "test": "atom --test spec",
-    "lint": "eslint lib spec"
+    "lint": "eslint lib spec",
+    "editor": "atom -d ."
   },
   "pre-commit": [
     "lint"
   ],
   "dependencies": {
     "atom-space-pen-views": "2.2.0",
+    "babel-preset-es2015": "6.9.0",
+    "babel-register": "6.9.0",
+    "es6-promisify": "4.1.0",
+    "glob": "7.0.5",
     "jscodeshift": "0.3.20",
-    "promalom": "0.2.0"
+    "node-uuid": "1.4.7",
+    "rxjs": "5.0.0-beta.9"
   },
   "devDependencies": {
+    "babel-eslint": "6.0.4",
     "eslint": "2.10.1",
     "eslint-config-airbnb-base": "3.0.1",
     "eslint-plugin-import": "1.8.0",
