@@ -1,7 +1,7 @@
 {
   "name": "codemods",
   "main": "./lib/main",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Atom plugin to run custom js transforms / codemods on your code",
   "keywords": [],
   "consumedServices": {
