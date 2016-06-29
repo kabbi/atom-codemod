@@ -1,3 +1,5 @@
+// A simple demo to transform arrow functions
+
 // eslint-disable-next-line arrow-body-style
 export const add = (a, b) => a + b;
 // eslint-disable-next-line arrow-body-style
