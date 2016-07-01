@@ -2,7 +2,19 @@
   "context-menu": {
     "atom-text-editor": [{
       "label": "Run codemod on this file",
-      "command": "codemods:apply:file"
+      "command": "codemod:apply-to-file"
+    }],
+    ".tree-view.full-menu .file.list-item": [{
+      "label": "Run codemod on this file",
+      "command": "codemod:apply-to-file"
+    }],
+    ".tree-view.full-menu .header.list-item": [{
+      "label": "Run codemod on this file",
+      "command": "codemod:apply-to-folder"
+    }],
+    ".tree-view.full-menu .project-root .header.list-item": [{
+      "label": "Run codemod on this project",
+      "command": "codemod:apply-to-project"
     }]
   },
   "menu": [{
@@ -11,7 +23,7 @@
       "label": "Codemods",
       "submenu": [{
         "label": "Apply to current file",
-        "command": "codemods:apply:file"
+        "command": "codemod:apply-to-file"
       }]
     }]
   }]

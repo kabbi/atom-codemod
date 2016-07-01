@@ -21,6 +21,7 @@ Roadmap:
 - configure default transform search path
 - better worker process lifecycle management
 - run transforms on specific folder or whole project
+- reduce installation time
 
 Credits:
 - [jscodeshift](https://github.com/facebook/jscodeshift) - codemod runner and API wrapper
